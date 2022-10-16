@@ -6,6 +6,13 @@
 console.log('Happy hacking :)')
 
 const appNode = document.querySelector('#app');
+//delegacion de eventos
+appNode.addEventListener("click", (event) => {
+  if(event.target.nodeName === 'H2') {
+    alert('Happy coding :D')
+  }
+})
+
 const baseUrl = "https://platzi-avo.vercel.app"
 const url = "/api/avo";
 
