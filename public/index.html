@@ -8,37 +8,40 @@
       name="description"
       content="Web site created using create-snowpack-app"
     />
-    <!--
-      Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
-      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
-
-      More about config options:
-      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
-    -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="%PUBLIC_URL%/_dist_/index.css"
+      href="%PUBLIC_URL%/_dist_/style/index.css"
     />
-    <title>Snowpack & Tailwind App</title>
+    <title>ForFox</title>
   </head>
   <body>
-    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center">
-        <div id="app"></div>
-
-        <h3
-        class="mt-16 mb-8 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-      >
-        Foxs
-      </h3>
-        <div id="buttons"></div>
-        <div id="images"></div>
+    <div data-header class="h-20 top-0 flex justify-center fixed w-full bg-cream">
+      <div class="flex justify-center items-center">
+        <h3 class="text-3xl leading-8 font-normal tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          For<strong>Fox</strong>
+        </h3>
+        <img src="./assets/forfox-image.png"/>
       </div>
     </div>
-
+    <div class="max-w-screen-xl mx-auto h-screen pt-24 lg:pt-40">
+      <div class="flex flex-col lg:flex-row lg:space-beetwen h-full">
+        <div class="w-96 mx-auto lg:ml-40 lg:fixed">
+          <div class="mb-12 lg:mr-16 text-center lg:text-left">
+            <p class="text-3xl">Find the <span class="font-bold text-orange">best foxes</span> from all corners of the internet</p>
+          </div>
+          <div id="buttons" class="flex justify-center lg:justify-start"></div>
+        </div>
+        <div class="w-fit mx-auto mt-16 lg:mt-0 lg:ml-auto lg:mr-40">
+          <div id="images" class="bg-yellow-cream w-full h-fit rounded-3xl"></div>
+        </div>
+      </div>
+    </div>
+    <div data-footer class="fixed bottom-4 right-4">
+      <p>created by <strong>maga</strong></p>
+    </div>
+  
     <!-- Add more scripts here -->
-    <script type="module" src="%PUBLIC_URL%/_dist_/avos.js"></script>
     <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
   </body>
 </html>
