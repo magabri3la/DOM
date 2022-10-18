@@ -1,5 +1,5 @@
-import {registerImage} from './lazy';
-import {createImageNode} from './utils';
+import {registerImage} from './utils/lazy';
+import {createImageNode} from './utils/utils';
 
 const imagesNode = document.querySelector('#images');
 const buttonsNode = document.querySelector('#buttons');
@@ -19,13 +19,13 @@ function cleanImages () {
 
 const buttonAddImages = document.createElement('button');
 buttonAddImages.innerText = "Agrega nueva imagen";
-buttonAddImages.className = "bg-blue-500 hover:bg-blue-600 text-white p-2 px-4 rounded-lg mr-8";
+buttonAddImages.className = "bg-orange text-white font-semibold p-2 px-4 rounded-lg mr-8 border-2 border-black";
 buttonsNode.append(buttonAddImages);
 buttonAddImages.addEventListener('click', addImage);
 
 
 const buttonCleanImages = document.createElement('button');
 buttonCleanImages.innerText = "Limpiar todo";
-buttonCleanImages.className = "bg-blue-500 hover:bg-blue-600 text-white p-2 px-4 rounded-lg";
+buttonCleanImages.className = "text-gray font-semibold";
 buttonsNode.append(buttonCleanImages);
 buttonCleanImages.addEventListener('click', cleanImages);

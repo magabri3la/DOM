@@ -1,0 +1,27 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+
+body {
+  background-color: #FDF7EB;
+}
+
+.bg-cream {
+  background-color: #FDF7EB;
+}
+
+.bg-yellow-cream {
+  background-color: #FDE9C6;
+}
+
+.bg-orange{
+  background-color: #EA9600;
+}
+
+.text-orange{
+  color: #EA9600;
+}
+
+.text-gray{
+  color: #9B948E;
+}
