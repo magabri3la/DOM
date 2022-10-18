@@ -4,8 +4,9 @@ function isIntersecting (entry) {
 
 function loadImage (entry) {
 	const container = entry.target;
-	const image = container.querySelector("img");
-	image.src = image.dataset.src;
+	const image = container.firstChild;
+	const url = image.dataset.src;
+	image.src = url;
 
 	observer.unobserve(container)
 };
