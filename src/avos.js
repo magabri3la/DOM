@@ -5,9 +5,9 @@
 
 console.log('Happy hacking :)')
 
-const appNode = document.querySelector('#app');
+const avoNode = document.querySelector('#app');
 //delegacion de eventos
-appNode.addEventListener("click", (event) => {
+avoNode.addEventListener("click", (event) => {
   if(event.target.nodeName === 'H2') {
     alert('Happy coding :D')
   }
@@ -69,7 +69,7 @@ data.forEach(item => {
   cards.push(container);
 })
 
-appNode.className = "container mx-auto grid gap-4 grid-cols-3 grid-rows-3 mt-8";
-appNode.append(...cards);
+avoNode.className = "container mx-auto grid gap-4 grid-cols-3 grid-rows-3 mt-8";
+avoNode.append(...cards);
 
 console.log('Happy ending :)');
