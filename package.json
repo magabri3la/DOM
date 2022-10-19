@@ -1,11 +1,14 @@
 {
+  "homepage": "https://magabri3la.github.io/lazy-forfox/",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
-    "install:husky": "husky install"
+    "install:husky": "husky install",
+    "predeploy" : "snowpack build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "husky": "7",
@@ -15,6 +18,7 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "hyperscript": "^2.0.2"
   }
 }
