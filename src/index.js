@@ -1,5 +1,5 @@
-import {registerImage} from './utils/lazy';
-import {createImageNode} from './utils/utils';
+import {registerImage} from './lazy';
+import {createImageNode} from './utils';
 
 const imagesNode = document.querySelector('#images');
 const buttonsNode = document.querySelector('#buttons');
