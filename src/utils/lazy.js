@@ -1,4 +1,3 @@
-// import { totalImages, loadedImages } from './foxs';
 let totalImages = 0;
 let loadedImages = 0;
 
@@ -8,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const isIntersecting = intersectionEntry => intersectionEntry.isIntersecting;
 
-function loadImage (intersectionEntry) {
+const loadImage = intersectionEntry => {
 	const container = intersectionEntry.target;
 	const skeletonImage = container.firstChild;
 	const image = skeletonImage.firstChild;
@@ -23,15 +22,14 @@ function loadImage (intersectionEntry) {
 	observer.unobserve(container)
 };
 
-
-export function registerImage (image) {
+export const registerImage = image => {
 	observer.observe(image);
 	totalImages += 1;
   logState();
 };
 
-function logState() {
+const logState = () => {
   console.log(`⚪️ Total Imágenes: ${totalImages}`);
   console.log(`🟣 Imágenes cargadas: ${loadedImages}`);
   console.log("--------------------------------------");
-}
+};

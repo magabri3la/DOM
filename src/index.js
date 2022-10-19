@@ -10,12 +10,12 @@ function addImage () {
 	const newImage = createImageNode(baseUrl);
 	imagesNode.appendChild(newImage);
 	registerImage(newImage);
-}
+};
 
 function cleanImages () {
 	imagesNode.innerHTML = "";
 	window.location.reload();
-}
+};
 
 const buttonAddImages = document.createElement('button');
 buttonAddImages.innerText = "Agrega nueva imagen";

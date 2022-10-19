@@ -3,7 +3,7 @@ const maximum = 122;
 
 const random = () => Math.floor(Math.random() * (maximum - minimum)) + minimum;
 
-export function createImageNode (baseUrl) {
+export const createImageNode = baseUrl => {
 	const imageContainerHTML = document.createElement('div');
 	imageContainerHTML.className = "p-4";
 
@@ -14,7 +14,6 @@ export function createImageNode (baseUrl) {
 
 	const imageHTML = document.createElement('img');
 	imageHTML.dataset.src = `${baseUrl}${random()}.jpg`;
-	// imageHTML.src = `${baseUrl}${num}.jpg`;
 	imageHTML.width = 350;
 	imageHTML.className = "mx-auto rounded-xl";
 
